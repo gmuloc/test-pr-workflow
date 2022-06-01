@@ -1,0 +1,3 @@
+"rn: Documentation":
+  - ansible_collections/arista/avd/roles/build_output_folders/*
+  - ansible_collections/arista/avd/roles/build_output_folders/**/*

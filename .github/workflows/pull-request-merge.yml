@@ -1,0 +1,25 @@
+name: "Pull Request Merge"
+
+on:
+  pull_request_target:
+    types:
+      - closed
+
+jobs:
+  ###################################################
+  # Assign labels on merge to generate Release Notes
+  # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-when-a-pull-request-merges
+  ###################################################
+  if_merged:
+    name: "PR Merged"
+    if: github.event.pull_request.merged == true
+      runs-on: ubuntu-latest
+      steps:
+        - run: |
+          echo The PR was merged
+        # V3 is not used as we hit following issue: https://github.com/actions/labeler/issues/107
+        - uses: actions/labeler@v2
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: '.github/merge-labeler.yml'
+          sync-labels: true # should not be needed
