@@ -18,8 +18,7 @@ jobs:
         - run: |
           echo The PR was merged
         # V3 is not used as we hit following issue: https://github.com/actions/labeler/issues/107
-        - uses: actions/labeler@v2
+        - uses: bcoe/conventional-release-labels@v1
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          configuration-path: '.github/merge-labeler.yml'
-          sync-labels: true # should not be needed
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          type_labels: {"Feat": "rn:feature", "Fix": "rn:fix", "Breaking":"rn:breaking"}
