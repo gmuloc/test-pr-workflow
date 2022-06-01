@@ -5,10 +5,17 @@ changelog:
     authors:
       - octocat
   categories:
-    - title: Breaking Changes 🛠
+    - title: eos_designs Breaking Changes 🛠
       labels:
         - rn:breaking
         - role:eos_designs
+      exclude:
+        labels:
+          - role:*
+    - title: eos_cli_config_gen Breaking Changes 🛠
+      labels:
+        - rn:breaking
+        - role:eos_cli_config_gen
       exclude:
         labels:
           - role:*
