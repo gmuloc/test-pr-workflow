@@ -14,6 +14,12 @@ changelog:
     - title: Fixes 🔧
       labels:
         - rn:fix
+    - title: Documentation 📄
+      labels:
+        - rn:documentation
+    - title: CI 🤖
+      labels:
+        - rn:cicd
     - title: Other Changes
       labels:
         - "*"
