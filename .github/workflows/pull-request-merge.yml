@@ -18,7 +18,7 @@ jobs:
       - run: |
           echo "The PR was merged"
       # V3 is not used as we hit following issue: https://github.com/actions/labeler/issues/107
-      - uses: bcoe/conventional-release-labels@v1
+      - uses: bcoe/conventional-release-labels@v1.3.0
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
           type_labels: '{"Feat": "rn:feature", "Fix": "rn:fix", "Breaking":"rn:breaking", "Doc":"rn:documentation", "CI":"rn:cicd"}'
