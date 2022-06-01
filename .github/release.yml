@@ -8,6 +8,7 @@ changelog:
     - title: Breaking Changes 🛠
       labels:
         - rn:breaking
+        - role:eos_designs
     - title: Exciting New Features 🎉
       labels:
         - rn:feature
