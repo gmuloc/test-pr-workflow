@@ -21,4 +21,4 @@ jobs:
       - uses: bcoe/conventional-release-labels@v1
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
-          type_labels: '{"Feat": "rn:feature", "Fix": "rn:fix", "Breaking":"rn:breaking"}'
+          type_labels: '{"Feat": "rn:feature", "Fix": "rn:fix", "Breaking":"rn:breaking", "Doc":"rn:documentation", "CI":"rn:cicd"}'
