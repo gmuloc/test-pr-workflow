@@ -9,6 +9,9 @@ changelog:
       labels:
         - rn:breaking
         - role:eos_designs
+      exclude:
+        labels:
+          - role:*
     - title: Exciting New Features 🎉
       labels:
         - rn:feature
