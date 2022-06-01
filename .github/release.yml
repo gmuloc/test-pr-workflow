@@ -7,13 +7,13 @@ changelog:
   categories:
     - title: Breaking Changes 🛠
       labels:
-        - rn:Break
+        - rn:break
     - title: Exciting New Features 🎉
       labels:
-        - rn:Feat
+        - rn:feat
     - title: Fixes 🔧
       labels:
-        - rn:Fix
+        - rn:fix
     - title: Other Changes
       labels:
         - "*"
