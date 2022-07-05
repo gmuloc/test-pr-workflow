@@ -11,14 +11,14 @@ changelog:
         - role:eos_designs
       exclude:
         labels:
-          - role:*
+          - role:eos_cli_config_gen
     - title: eos_cli_config_gen Breaking Changes 🛠
       labels:
         - rn:breaking
         - role:eos_cli_config_gen
       exclude:
         labels:
-          - role:*
+          - role:eos_design
     - title: Exciting New Features 🎉
       labels:
         - rn:feature
