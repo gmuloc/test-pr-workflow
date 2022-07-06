@@ -5,6 +5,9 @@ on:
     types:
       - closed
       - edited # interested in post merge title changes
+env:
+  PR_CLOSED: ${{ github.event.action }} == "closed"
+  TITLE_MODIFIED: ${{ github.event.action }} == "edited" && ${{ github.event.changes.title }} != null
 
 jobs:
   ###################################################
@@ -15,9 +18,6 @@ jobs:
     name: "PR was merged"
     if: (github.event.pull_request.merged == true) && ( ${{ env.PR_CLOSED }} || ${{ env.TITLE_MODIFIED }})
     runs-on: ubuntu-latest
-    env:
-      PR_CLOSED: ${{ github.event.action }} == "closed"
-      TITLE_MODIFIED: ${{ github.event.action }} == "edited" && ${{ github.event.changes.title }} != null
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
