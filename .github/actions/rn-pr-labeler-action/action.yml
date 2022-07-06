@@ -9,7 +9,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v3
     - name: 'Looking up existing "rn:" label'
       run: |
         echo "OLD_LABEL=$(gh pr view ${{ github.event.pull_request.number }} --json labels -q .labels[].name | grep 'rn: ')" >> $GITHUB_ENV
