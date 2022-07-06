@@ -26,7 +26,7 @@ jobs:
           type_labels: '{"Feat": "rn:feature", "Fix": "rn:fix", "Breaking":"rn:breaking", "Doc":"rn:documentation", "CI":"rn:cicd"}'
       - uses: actions/checkout@v2
       - name: Set Label
-        run: echo "LABEL=$(echo ${{ github.event.pull_request.title }} | cut -d ':' -f 1)" >> $GITHUB_ENV
+        run: echo "LABEL=$(echo \"${{ github.event.pull_request.title }}\" | cut -d ':' -f 1)" >> $GITHUB_ENV
       - name: Echo Label
         run: echo $LABEL
       - name: Manual labelling!
