@@ -6,7 +6,6 @@ inputs:
     description: "Boolean to indicate if the label should be auto created"
     required: false
     default: false
-outputs:
 runs:
   env:
     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
