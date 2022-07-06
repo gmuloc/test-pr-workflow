@@ -20,6 +20,9 @@ runs:
     - name: Set Label
       run: echo "LABEL=$(echo '${{ github.event.pull_request.title }}' | cut -d ':' -f 1)" >> $GITHUB_ENV
       shell: bash
+      # an alternative to verifying if the target label already exist is to
+      # create the label with --force in the next step, it will keep on changing
+      # the color of the label though so it may not be desirable.
     - name: Check if label exist
       run: |
         EXIST=$(gh label list --json name -q '.[] | select(.name=="rn: ${{ env.LABEL }}").name')
