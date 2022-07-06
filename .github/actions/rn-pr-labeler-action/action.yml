@@ -22,9 +22,11 @@ runs:
       run: echo "LABEL=$(echo '${{ github.event.pull_request.title }}' | cut -d ':' -f 1)" >> $GITHUB_ENV
       shell: bash
     - name: Create Label if auto-create
-      run: gh label create "rn: ${{ env.LABEL }}"
+      run: |
+        gh label create "rn: ${{ env.LABEL }}"
       shell: bash
       if: ${{ inputs.auto_create_label }}
     - name: Labelling PR
-      run: gh pr edit ${{ github.event.pull_request.number }} --add-label "rn: ${{ env.LABEL }}"
+      run: | 
+        gh pr edit ${{ github.event.pull_request.number }} --add-label "rn: ${{ env.LABEL }}"
       shell: bash
