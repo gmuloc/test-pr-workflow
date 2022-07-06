@@ -24,6 +24,7 @@ jobs:
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
           type_labels: '{"Feat": "rn:feature", "Fix": "rn:fix", "Breaking":"rn:breaking", "Doc":"rn:documentation", "CI":"rn:cicd"}'
+      - uses: actions/checkout@v2
       - name: Set Label
         run: echo "LABEL=$(echo github.event.pull_request.title  | cut -d ':' -f 1)" >> $GITHUB_ENV
       - name: Manual labelling!
