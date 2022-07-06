@@ -16,7 +16,7 @@ jobs:
     if: github.event.pull_request.merged == true && (github.event.action == "closed" || $TITLE_MODIFIED
     runs-on: ubuntu-latest
     env:
-      TITLE_MODIFIED: ${{github.event.action == "edited" && github.event.changes.title != null }}
+      TITLE_MODIFIED: ${{ github.event.action }} == "edited" && ${{ github.event.changes.title }} != null
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
