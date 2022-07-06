@@ -4,6 +4,7 @@ on:
   pull_request_target:
     types:
       - closed
+      - edited
 
 jobs:
   ###################################################
@@ -24,7 +25,11 @@ jobs:
       #  with:
       #    token: "${{ secrets.GITHUB_TOKEN }}"
       #    type_labels: '{"Feat": "rn:feature", "Fix": "rn:fix", "Breaking":"rn:breaking", "Doc":"rn:documentation", "CI":"rn:cicd"}'
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - name: dump github event
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - name: Set Label
         run: echo "LABEL=$(echo 'rn:${{ github.event.pull_request.title }}' | cut -d ':' -f 1,2)" >> $GITHUB_ENV
       - name: Echo Label
