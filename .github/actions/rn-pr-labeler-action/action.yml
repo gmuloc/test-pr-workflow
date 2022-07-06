@@ -23,6 +23,7 @@ runs:
     - name: Check if label exist
       run: |
         echo "EXIST=$(gh label list --json name -q \".[] | select(.name==\"env.LABEL\").name\"))" >> $GITHUB_ENV
+      shell: bash
     - name: Create Label if auto-create and label does not exist already
       run: |
         gh label create "rn: ${{ env.LABEL }}"
