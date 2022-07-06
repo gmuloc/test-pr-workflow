@@ -13,10 +13,11 @@ jobs:
   ###################################################
   if_merged:
     name: "PR was merged"
-    if: github.event.pull_request.merged == true && ((github.event.action == closed) || $TITLE_MODIFIED)
+    if: github.event.pull_request.merged == true && ($PR_CLOSED || $TITLE_MODIFIED)
     runs-on: ubuntu-latest
     env:
-      TITLE_MODIFIED: ${{ github.event.action }} == edited && ${{ github.event.changes.title }} != null
+      PR_CLOSED: ${{ github.event.action }} == "closed"
+      TITLE_MODIFIED: ${{ github.event.action }} == "edited" && ${{ github.event.changes.title }} != null
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
