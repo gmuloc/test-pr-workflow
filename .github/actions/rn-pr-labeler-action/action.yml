@@ -29,7 +29,7 @@ runs:
       run: |
         gh label create "rn: ${{ env.LABEL }}"
       shell: bash
-      if: ${{ inputs.auto_create_label }} && !${{ env.EXIST }}
+      if: ${{ inputs.auto_create_label  && ! env.EXIST }}
     - name: Labelling PR
       run: | 
         gh pr edit ${{ github.event.pull_request.number }} --add-label "rn: ${{ env.LABEL }}"
