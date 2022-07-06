@@ -664,6 +664,30 @@ changelog:
       labels:
         - 'rn: Feat!'
         - 'rn: Fix!'
+    - title: "Other Features \u2728"
+      labels:
+        - 'rn: Feat'
+    - title: "Other Bug Fixes \U0001F41B"
+      labels:
+        - 'rn: Fix'
+    - title: "Other Cut \u2702\uFE0F"
+      labels:
+        - 'rn: Cut'
+    - title: "Other Documentation \U0001F4DA"
+      labels:
+        - 'rn: Doc'
+    - title: "Other CI \U0001F477"
+      labels:
+        - 'rn: CI'
+    - title: "Other Bump \u261D\uFE0F"
+      labels:
+        - 'rn: Bump'
+    - title: "Other Test \U0001F6A8"
+      labels:
+        - 'rn: Test'
+    - title: "Other Revert \u23EA "
+      labels:
+        - 'rn: Revert'
     - title: "Other Refactoring \U0001F528"
       labels:
         - 'rn: Refactor'
