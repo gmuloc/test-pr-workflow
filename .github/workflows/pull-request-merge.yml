@@ -20,13 +20,13 @@ jobs:
       - run: |
           echo "The PR was merged"
       # V3 is not used as we hit following issue: https://github.com/actions/labeler/issues/107
-      - uses: bcoe/conventional-release-labels@v1.3.0
-        with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
-          type_labels: '{"Feat": "rn:feature", "Fix": "rn:fix", "Breaking":"rn:breaking", "Doc":"rn:documentation", "CI":"rn:cicd"}'
+      # - uses: bcoe/conventional-release-labels@v1.3.0
+      #  with:
+      #    token: "${{ secrets.GITHUB_TOKEN }}"
+      #    type_labels: '{"Feat": "rn:feature", "Fix": "rn:fix", "Breaking":"rn:breaking", "Doc":"rn:documentation", "CI":"rn:cicd"}'
       - uses: actions/checkout@v2
       - name: Set Label
-        run: echo "LABEL=$(echo 'rn:${{ github.event.pull_request.title }}' | cut -d ':' -f 1)" >> $GITHUB_ENV
+        run: echo "LABEL=$(echo 'rn:${{ github.event.pull_request.title }}' | cut -d ':' -f 1,2)" >> $GITHUB_ENV
       - name: Echo Label
         run: echo $LABEL
       - name: Create Label
