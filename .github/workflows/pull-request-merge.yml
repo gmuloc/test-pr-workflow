@@ -18,6 +18,7 @@ jobs:
     name: "PR was merged"
     if: (github.event.pull_request.merged == true) && ( ${{ env.PR_CLOSED }} || ${{ env.TITLE_MODIFIED }})
     runs-on: ubuntu-latest
+    env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
