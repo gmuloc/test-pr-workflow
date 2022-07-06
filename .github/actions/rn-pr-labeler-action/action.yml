@@ -7,8 +7,6 @@ inputs:
     required: false
     default: false
 runs:
-  env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   using: "composite"
   steps:
     - uses: actions/checkout@v3
