@@ -15,7 +15,7 @@ runs:
         echo "OLD_LABEL=$(gh pr view ${{ github.event.pull_request.number }} --json labels -q .labels[].name | grep 'rn: ')" >> $GITHUB_ENV
       shell: bash
     - name: 'Delete existing "rn:" label if found'
-      run: gh pr edit ${{ github.event.pull_request.number }} --remove-label ${{ env.OLD_LABEL }}
+      run: gh pr edit ${{ github.event.pull_request.number }} --remove-label "${{ env.OLD_LABEL }}"
       shell:  bash
       if: ${{ env.OLD_LABEL }}
     - name: Set Label
