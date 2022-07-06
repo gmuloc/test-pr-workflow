@@ -66,53 +66,53 @@ changelog:
       labels:
         - 'rn: Feat(eos_designs)!'
         - 'rn: Fix(eos_designs)!'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)!'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)!'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)!'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)!'
     - title: "`eos_designs` Features \u2728"
       labels:
         - 'rn: Feat(eos_designs)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_designs` Bug Fixes \U0001F41B"
       labels:
         - 'rn: Fix(eos_designs)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_designs` Cut \u2702\uFE0F"
       labels:
         - 'rn: Cut(eos_designs)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_designs` Documentation \U0001F4DA"
       labels:
         - 'rn: Doc(eos_designs)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_designs` CI \U0001F477"
       labels:
         - 'rn: CI(eos_designs)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_designs` Bump \u261D\uFE0F"
       labels:
         - 'rn: Bump(eos_designs)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_designs` Test \U0001F6A8"
       labels:
         - 'rn: Test(eos_designs)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_designs` Revert \u23EA "
       labels:
         - 'rn: Revert(eos_designs)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_designs` Refactoring \U0001F528"
       labels:
         - 'rn: Refactor(eos_designs)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_designs_to_containerlab` Breaking Changes \U0001F6E0"
       labels:
         - 'rn: Feat(eos_designs_to_containerlab)!'
@@ -334,53 +334,53 @@ changelog:
       labels:
         - 'rn: Feat(eos_cli_config_gen)!'
         - 'rn: Fix(eos_cli_config_gen)!'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)!'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)!'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)!'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)!'
     - title: "`eos_cli_config_gen` Features \u2728"
       labels:
         - 'rn: Feat(eos_cli_config_gen)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_cli_config_gen` Bug Fixes \U0001F41B"
       labels:
         - 'rn: Fix(eos_cli_config_gen)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_cli_config_gen` Cut \u2702\uFE0F"
       labels:
         - 'rn: Cut(eos_cli_config_gen)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_cli_config_gen` Documentation \U0001F4DA"
       labels:
         - 'rn: Doc(eos_cli_config_gen)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_cli_config_gen` CI \U0001F477"
       labels:
         - 'rn: CI(eos_cli_config_gen)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_cli_config_gen` Bump \u261D\uFE0F"
       labels:
         - 'rn: Bump(eos_cli_config_gen)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_cli_config_gen` Test \U0001F6A8"
       labels:
         - 'rn: Test(eos_cli_config_gen)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_cli_config_gen` Revert \u23EA "
       labels:
         - 'rn: Revert(eos_cli_config_gen)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`eos_cli_config_gen` Refactoring \U0001F528"
       labels:
         - 'rn: Refactor(eos_cli_config_gen)'
-        - 'rn: Feat(eos_designs,eos_cli_config_gen)'
-        - 'rn: Feat(eos_cli_config_gen,eos_designs)'
+        - 'rn: Feat(eos_designs-eos_cli_config_gen)'
+        - 'rn: Feat(eos_cli_config_gen-eos_designs)'
     - title: "`plugins` Breaking Changes \U0001F6E0"
       labels:
         - 'rn: Feat(plugins)!'
