@@ -13,3 +13,6 @@ Testing if labels are ORed or ANDed with a breaking change
 Testing if labels are ORed or ANDed with a second breaking change
 
 Testing if we can leverage exlude labels
+
+
+New pr for v0.0.6
