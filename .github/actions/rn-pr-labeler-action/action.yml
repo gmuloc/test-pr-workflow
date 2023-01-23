@@ -18,7 +18,7 @@ runs:
       shell: bash
       if: ${{ env.OLD_LABEL }}
     - name: Set Label
-      env: TITLE=${{ ${github.event.pull_request.title%%:*} }}
+      env: TITLE=${${{github.event.pull_request.title}}%%:*}
       run: echo "LABEL=$(echo $TITLE | tr -d ' ')" >> $GITHUB_ENV
       shell: bash
       # an alternative to verifying if the target label already exist is to
