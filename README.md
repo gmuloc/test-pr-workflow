@@ -19,4 +19,3 @@ New pr for v0.0.6
 
 PR with some `'` in title to mess up code - yay
 What about `"` ?
-Double test `"` + `'`
